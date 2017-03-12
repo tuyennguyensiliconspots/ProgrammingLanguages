@@ -15,3 +15,7 @@ $ git clone https://github.com/tuyennguyensiliconspots/ProgrammingLanguages.git
 $ git status
 9. Add all new files to repository
 $ git add -A
+10. Commit the file with comment
+$ git commit -m "Added Git tutorial."
+11. Push changes to server
+$ git push -u origin master
