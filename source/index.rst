@@ -14,6 +14,8 @@ Here is some text explaining some very complicated stuff.::
    :maxdepth: 2
    :caption: Contents:
 
+   git
+   
 
 
 Indices and tables
