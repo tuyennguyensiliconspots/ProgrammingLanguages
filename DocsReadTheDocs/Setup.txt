@@ -71,3 +71,11 @@
 	D:\GitRepos\ProgrammingLanguages\source\index.rst
 8. Build the documention again
 	(ProgrammingLanguages) D:\GitRepos\ProgrammingLanguages>make html
+9. Circle
+	- Edit file
+	- Run "make html" command
+	- Commit and Push with Git client
+	or
+	- Edit file
+	- Commit and Push with Git client
+	
