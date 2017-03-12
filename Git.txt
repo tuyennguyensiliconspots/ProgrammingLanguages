@@ -19,3 +19,5 @@ $ git add -A
 $ git commit -m "Added Git tutorial."
 11. Push changes to server
 $ git push -u origin master
+12. How to commit only modified (and not new or deleted) files?
+$ git commit -am "commit message"
