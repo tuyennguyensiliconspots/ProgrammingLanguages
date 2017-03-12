@@ -1,0 +1,17 @@
+Git
+1. Download: 
+https://git-scm.com/download/win
+2. View configuration: 
+$ git config --list
+3. Set user name: 
+$ git config --global user.name "Tuyen Nguyen"
+4. Set password: 
+$ git config --global user.email "tuyen.nguyen@siliconspots.com"
+5. Go to GitHub and copy URL of project: https://github.com/tuyennguyensiliconspots/ProgrammingLanguages.git
+6. Clone project: 
+$ git clone https://github.com/tuyennguyensiliconspots/ProgrammingLanguages.git
+7. Navigate to the ProgrammingLanguage folder and create some files.
+8. View status: 
+$ git status
+9. Add all new files to repository
+$ git add -A
