@@ -1,0 +1,73 @@
+0. Open Windows Command Line Interface cmd
+	cmd.exe
+1. Create virtual environment for current folder
+	$ python -m venv .
+2. Activate virtual environment
+	$ D:\GitRepos>ProgrammingLanguages\Scripts\activate.bat
+3. Install Sphinx
+	(ProgrammingLanguages) D:\GitRepos>pip install sphinx
+4. Quick start Sphinx
+	(ProgrammingLanguages) D:\GitRepos>sphinx-quickstart
+		> Root path for the documentation [.]: D:\GitRepos\ProgrammingLanguages
+		> Separate source and build directories (y/n) [n]: y
+		> Name prefix for templates and static dir [_]: n
+		> Project name: Programming Languages
+		> Author name(s): Tuyen Nguyen
+		> Project version []: 0.0.1
+		> Project release [0.0.1]: 0.0.1
+		> Project language [en]: English
+		> Source file suffix [.rst]:
+		> Name of your master document (without suffix) [index]:
+		> Do you want to use the epub builder (y/n) [n]: n
+		> autodoc: automatically insert docstrings from modules (y/n) [n]: y
+		> doctest: automatically test code snippets in doctest blocks (y/n) [n]:
+		> intersphinx: link between Sphinx documentation of different projects (y/n) [n]:
+		> todo: write "todo" entries that can be shown or hidden on build (y/n) [n]:
+		> coverage: checks for documentation coverage (y/n) [n]:
+		> imgmath: include math, rendered as PNG or SVG images (y/n) [n]:
+		> mathjax: include math, rendered in the browser by MathJax (y/n) [n]:
+		> ifconfig: conditional inclusion of content based on config values (y/n) [n]:
+		> viewcode: include links to the source code of documented Python objects (y/n) [n]:
+		> githubpages: create .nojekyll file to publish the document on GitHub pages (y/n) [n]:
+		> Create Makefile? (y/n) [y]: y
+		> Create Windows command file? (y/n) [y]: y
+		
+		Creating file D:\GitRepos\ProgrammingLanguages\source\conf.py.
+		Creating file D:\GitRepos\ProgrammingLanguages\source\index.rst.
+		Creating file D:\GitRepos\ProgrammingLanguages\Makefile.
+		Creating file D:\GitRepos\ProgrammingLanguages\make.bat.
+		Finished: An initial directory structure has been created.
+		You should now populate your master file D:\GitRepos\ProgrammingLanguages\source\index.rst and create other documentation
+		source files. Use the Makefile to build the docs, like so:
+		make builder
+		where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
+5. Build documentation
+	(ProgrammingLanguages) D:\GitRepos\ProgrammingLanguages>make html
+		Running Sphinx v1.5.3
+		making output directory...
+		loading translations [English]... not available for built-in messages
+		loading pickled environment... not yet created
+		building [mo]: targets for 0 po files that are out of date
+		building [html]: targets for 1 source files that are out of date
+		updating environment: 1 added, 0 changed, 0 removed
+		reading sources... [100%] index
+		looking for now-outdated files... none found
+		pickling environment... done
+		checking consistency... done
+		preparing documents... done
+		writing output... [100%] index
+		generating indices... genindex
+		writing additional pages... search
+		copying static files... done
+		copying extra files... done
+		dumping search index in English (code: en) ... done
+		dumping object inventory... done
+		build succeeded.
+		
+		Build finished. The HTML pages are in build\html.
+6. View generated documentation 
+	D:\GitRepos\ProgrammingLanguages\build\html\index.html
+7. Edit RST file to change the presentation (RECOMMENDED -- http://socrates.io -- RECOMMENDED)
+	D:\GitRepos\ProgrammingLanguages\source\index.rst
+8. Build the documention again
+	(ProgrammingLanguages) D:\GitRepos\ProgrammingLanguages>make html

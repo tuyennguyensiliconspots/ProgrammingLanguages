@@ -1,0 +1,7 @@
+0. Open Windows Command Line Interface cmd
+1. Create virtual environment for current folder
+	$ python -m venv .
+2. Activate virtual environment
+	$ D:\GitRepos>ProgrammingLanguages\Scripts\activate.bat
+3. Deactivate virtual environment
+	$ (ProgrammingLanguages) D:\GitRepos>ProgrammingLanguages\Scripts\deactivate.bat
