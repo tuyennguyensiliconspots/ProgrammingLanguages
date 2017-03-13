@@ -64,5 +64,7 @@ VB.NET features:
 B. Advanced
 ========================
 
+    - Diagnostic :ref:`visualbasicdiagnostic`
+
 C. Useful Resources
 ========================

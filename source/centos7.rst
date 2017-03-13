@@ -19,7 +19,7 @@ Enable GUI and RDP for CentOS 7
 
 1. Connect to VM using SSH command tool like Putty.exe
     Host name: centosrdp.cloudapp.net (or IP address)
-    Port: 22
+    Port: 22 
 2. Type the following commands
     Gain root privileges::
 
