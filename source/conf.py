@@ -84,7 +84,12 @@ todo_include_todos = False
 # a list of builtin themes.
 #
 html_theme = 'alabaster'
-
+html_theme_options = {
+    "fixed_sidebar": "true",
+    "show_powered_by": "false",
+    "page_width": "1224px",
+    "sidebar_width": "312px",
+}
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
