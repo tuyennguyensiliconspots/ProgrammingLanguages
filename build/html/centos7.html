@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="English">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>CentOS 7 &#8212; Programming Languages 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Chapter 1 Title" href="git.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  <div class="document">
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">CentOS 7</a><ul>
+<li><a class="reference internal" href="#setup">1.  Setup</a><ul>
+<li><a class="reference internal" href="#subsection-1-1-1-title-test">Subsection 1.1.1 Title TEST</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#configuration">2. Configuration</a><ul>
+<li><a class="reference internal" href="#enable-gui-and-rdp-for-centos-7">Enable GUI and RDP for CentOS 7</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="git.html" title="previous chapter">Chapter 1 Title</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/centos7.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="centos-7">
+<h1>CentOS 7<a class="headerlink" href="#centos-7" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="setup">
+<h2>1.  Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="subsection-1-1-1-title-test">
+<h3>Subsection 1.1.1 Title TEST<a class="headerlink" href="#subsection-1-1-1-title-test" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="configuration">
+<h2>2. Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="enable-gui-and-rdp-for-centos-7">
+<h3>Enable GUI and RDP for CentOS 7<a class="headerlink" href="#enable-gui-and-rdp-for-centos-7" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><dl class="first docutils">
+<dt>Connect to VM using SSH command tool like Putty.exe</dt>
+<dd><p class="first last">Host name: centosrdp.cloudapp.net (or IP address)
+Port: 22</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Type the following commands</dt>
+<dd><p class="first">Gain root privileges:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># sudo -s</span>
+</pre></div>
+</div>
+<p>Install EPEL and nux Desktop repository rpms:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-1.el7.nux.noarch.rpm</span>
+</pre></div>
+</div>
+<p>after this is successful, continue by installing the GNOME desktop to get the graphical user interface you desire:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># yum groupinstall &quot;GNOME Desktop&quot; &quot;Graphical Administration Tools&quot;</span>
+</pre></div>
+</div>
+<p>the installation process will take sometime depending on your internet speed, after the installation is done, run the following command to change the reboot from CLI to GUI.:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># ln -sf /lib/systemd/system/runlevel5.target /etc/systemd/system/default.target</span>
+</pre></div>
+</div>
+<p>the next step is to install the xrdp to be able to RDP on the VM:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># yum -y install xrdp tigervnc-server</span>
+</pre></div>
+</div>
+<p>then start the xrdp service:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># systemctl start xrdp.service</span>
+</pre></div>
+</div>
+<p>then test the xrdp service by running the following command:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># netstat -antup | grep xrdp</span>
+</pre></div>
+</div>
+<p>now you can enable the xrdp service:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># systemctl enable xrdp.service</span>
+</pre></div>
+</div>
+<p>And then add a port in the machine firewall if it was activated, if not then there is no need for the next two commands.:</p>
+<div class="last highlight-default"><div class="highlight"><pre><span></span><span class="c1"># firewall-cmd --permanent --zone=public --add-port=3389/tcp</span>
+<span class="c1"># firewall-cmd --reload</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Go to Azure, and Open Network Security Group, add Inbound Security Rule for this VM:</dt>
+<dd><p class="first last">Priority: 1010
+Name: RemoteDesktop
+Source: Any
+Destination: Any
+Service: RDP(TCP/3389)
+Action: Allow</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">Open Remote Desktop Connection and connect to VM.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+    <div class="clearer"></div>
+  </div>
+    <div class="footer">
+      &copy;2017, Tuyen Nguyen.
+      
+      |
+      <a href="_sources/centos7.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
