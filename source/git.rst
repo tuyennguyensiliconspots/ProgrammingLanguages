@@ -13,11 +13,11 @@ Section 1.1 Title
 
 Create a local .gitignore::
 
-copy /b NUL .gitignore
+    copy /b NUL .gitignore
 
 Create a global .gitignore::
 
-git config --global core.excludesfile ~/.gitignore_global
+    git config --global core.excludesfile ~/.gitignore_global
 
 
 Section 1.2 Title
