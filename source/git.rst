@@ -8,8 +8,17 @@ Chapter 1 Title
 Section 1.1 Title
 -----------------
 
-Subsection 1.1.1 Title
-~~~~~~~~~~~~~~~~~~~~~~
+.gitignore
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Create a local .gitignore::
+
+copy /b NUL .gitignore
+
+Create a global .gitignore::
+
+git config --global core.excludesfile ~/.gitignore_global
+
 
 Section 1.2 Title
 -----------------
