@@ -11,17 +11,11 @@ Here is some text explaining some very complicated stuff.::
 	>> hello$
 	
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
-<<<<<<< HEAD
-	git
-	
-=======
    git
-   
-
->>>>>>> b04cbcef8bfeb9b6b04c8af919b7d07a3cf9d038
+   centos7
 
 Indices and tables
 ==================
