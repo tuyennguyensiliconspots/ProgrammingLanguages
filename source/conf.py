@@ -84,7 +84,19 @@ todo_include_todos = False
 # a list of builtin themes.
 #
 html_theme = 'alabaster'
+html_sidebars = {
+    '**': [
+        'about.html',
+        'navigation.html',
+        'relations.html',
+        'searchbox.html',
+        'donate.html',
+    ]
+}
 html_theme_options = {
+    'description': "Documentation for programming Languages",
+    'github_user': 'tuyennguyensiliconspots',
+    'github_repo': 'ProgrammingLanguages',
     "fixed_sidebar": "true",
     "show_powered_by": "false",
     "page_width": "1510px",

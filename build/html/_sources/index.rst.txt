@@ -11,15 +11,7 @@ Here is some text explaining some very complicated stuff.::
 	>> hello$
 	
 .. toctree::
-   :maxdepth: 1
-   :caption: Contents:
+    :hidden:
+    :glob:
 
-   git
-   centos7
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+    *
