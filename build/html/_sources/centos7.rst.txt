@@ -1,17 +1,21 @@
+===============
 CentOS 7
 ===============
 
 1.  Setup
------------------
+===============
+
+Section 1.1 Title TEST
+---------------------------
 
 Subsection 1.1.1 Title TEST
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 2. Configuration
------------------
+================
 
 Enable GUI and RDP for CentOS 7
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------
 
 1. Connect to VM using SSH command tool like Putty.exe
     Host name: centosrdp.cloudapp.net (or IP address)

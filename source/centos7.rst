@@ -12,7 +12,7 @@ Subsection 1.1.1 Title TEST
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 2. Configuration
-===============
+================
 
 Enable GUI and RDP for CentOS 7
 -------------------------------
