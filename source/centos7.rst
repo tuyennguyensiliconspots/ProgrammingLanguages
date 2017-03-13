@@ -1,17 +1,17 @@
 CentOS 7
 ===============
 
-Setup
+1.  Setup
 -----------------
 
 Subsection 1.1.1 Title TEST
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Configuration
+2. Configuration
 -----------------
 
-Enable GUI and RDP for CentOS 7 VM on Microsoft Azure
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enable GUI and RDP for CentOS 7
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Connect to VM using SSH command tool like Putty.exe
     Host name: centosrdp.cloudapp.net (or IP address)

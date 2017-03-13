@@ -87,8 +87,8 @@ html_theme = 'alabaster'
 html_theme_options = {
     "fixed_sidebar": "true",
     "show_powered_by": "false",
-    "page_width": "1224px",
-    "sidebar_width": "312px",
+    "page_width": "1510px",
+    "sidebar_width": "200px",
 }
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
